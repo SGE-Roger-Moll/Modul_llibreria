@@ -7,7 +7,7 @@ class categoria(models.Model):
     _name = 'llibreria.categoria'
     _description = 'llibreria.llibreria'
 
-    name = fields.Char(required=True)
+    nom = fields.Char(required=True)
     preu = fields.Float()
     exemplars = fields.Integer()
     rotura_estoc = fields.Boolean(compute="_compute_rotura", store=True)

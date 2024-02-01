@@ -1,28 +1,30 @@
 <odoo>
   <data>
     <!-- explicit list view definition -->
-<!--
+
     <record model="ir.ui.view" id="llibreria.list">
       <field name="name">llibreria list</field>
-      <field name="model">llibreria.llibreria</field>
+      <field name="model">llibreria.llibre</field>
       <field name="arch" type="xml">
         <tree>
-          <field name="name"/>
-          <field name="value"/>
-          <field name="value2"/>
+          <field name="nom"/>
+          <field name="preu"/>
+          <field name="exemplars"/>
+          <field name="rotura_estoc"/>
+          <field name="data"/>
+          <field name="segonama"/>
+          <field name="estat"/>
         </tree>
       </field>
     </record>
--->
+
 
     <!-- actions opening views on models -->
-<!--
     <record model="ir.actions.act_window" id="llibreria.action_window">
       <field name="name">llibreria window</field>
-      <field name="res_model">llibreria.llibreria</field>
+      <field name="res_model">llibreria.llibre</field>
       <field name="view_mode">tree,form</field>
     </record>
--->
 
     <!-- server action to the one above -->
 <!--
@@ -41,20 +43,11 @@
 -->
 
     <!-- Top menu item -->
-<!--
     <menuitem name="llibreria" id="llibreria.menu_root"/>
--->
     <!-- menu categories -->
-<!--
     <menuitem name="Menu 1" id="llibreria.menu_1" parent="llibreria.menu_root"/>
-    <menuitem name="Menu 2" id="llibreria.menu_2" parent="llibreria.menu_root"/>
--->
     <!-- actions -->
-<!--
     <menuitem name="List" id="llibreria.menu_1_list" parent="llibreria.menu_1"
               action="llibreria.action_window"/>
-    <menuitem name="Server to list" id="llibreria" parent="llibreria.menu_2"
-              action="llibreria.action_server"/>
--->
   </data>
 </odoo>
