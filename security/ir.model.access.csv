@@ -1,2 +1,3 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_llibreria_llibre,llibreria.llibre,model_llibreria_llibre,base.group_user,1,1,1,1
+llibreria_llibre_access,llibreria_llibre_access,model_llibreria_llibre,base.group_user,1,1,1,1
+llibreria_categoria_access,llibreria_categoria_access,model_llibreria_categoria,base.group_user,1,1,1,1

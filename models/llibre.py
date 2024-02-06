@@ -3,9 +3,9 @@
 from odoo import models, fields, api
 
 
-class categoria(models.Model):
-    _name = 'llibreria.categoria'
-    _description = 'llibreria.llibreria'
+class llibre(models.Model):
+    _name = 'llibreria.llibre'
+    _description = 'llibreria.llibre'
 
     nom = fields.Char(required=True)
     preu = fields.Float()
